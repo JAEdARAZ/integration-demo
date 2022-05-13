@@ -9,3 +9,4 @@ jobs:
     steps:
       - checkout
       - run: ./mvnw -Dmaven.test.skip=true package
+      ls
