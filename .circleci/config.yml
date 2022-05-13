@@ -8,5 +8,7 @@ jobs:
     
     steps:
       - checkout
-      - run: ./mvnw -Dmaven.test.skip=true package
-      ls
+      - run: |
+          ./mvnw -Dmaven.test.skip=true package
+          ls
+      
