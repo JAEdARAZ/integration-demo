@@ -8,7 +8,6 @@ jobs:
     
     steps:
       - checkout
-      - run: |
-          ./mvnw -Dmaven.test.skip=true package
-          cd target && ls
+      - run: ./mvnw -Dmaven.test.skip=true package
+      - run: cd target && ls
       
