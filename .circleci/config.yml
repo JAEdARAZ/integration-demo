@@ -10,5 +10,5 @@ jobs:
       - checkout
       - run: |
           ./mvnw -Dmaven.test.skip=true package
-          ls
+          cd target && ls
       
